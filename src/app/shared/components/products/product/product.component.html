@@ -1,0 +1,14 @@
+<p class="alert alert-info">
+    The Product Name is <strong>{{productObj.pName}}</strong> with id
+    <strong>{{productObj.pId}}</strong> and
+    product status is <strong>{{productObj.pStatus}}</strong>
+</p>
+
+<button class="btn btn-primary"
+[routerLink]="['/products' , productObj.pId , 'edit' ]"
+>Edit Product Details</button>
+
+<div>
+    {{productObj | json}}
+
+</div>

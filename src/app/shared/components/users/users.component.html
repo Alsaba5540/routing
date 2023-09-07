@@ -1,0 +1,21 @@
+<div class="col-sm-4 ">
+    <ul class="list-group">
+        <li class="list-group-item"
+        [routerLink]="['/users' , user.userId]"
+        *ngFor="let user of usersInfo">
+        {{user.userName}}
+        </li>
+    </ul>
+    <div class="mt-4">
+        <button class="btn btn-primary"
+        (click)="onUserShow()"
+        >
+       Show All dashboard
+        </button>
+    </div>
+
+</div>
+
+
+
+
