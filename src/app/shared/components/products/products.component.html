@@ -1,0 +1,21 @@
+<div class="col-sm-6">
+    <ul class="list-group">
+      
+      
+        <li class="list-group-item" 
+        [routerLink]="['/products' , product.pId]"
+    
+        *ngFor="let product of ProductInfo">
+        {{product.pName}}
+
+        </li>
+    </ul>
+
+  <div class="mt-4">
+    <button class="btn btn-primary"
+    (click)="onUsersShow()">
+        Show Users
+    </button>
+  </div>
+    
+</div>

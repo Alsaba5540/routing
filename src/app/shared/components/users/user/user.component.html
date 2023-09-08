@@ -1,0 +1,29 @@
+<p class="alert alert-info">
+    Hello I am <strong>{{userObj.userName}}   </strong> with ID <strong> {{userObj.userId}}</strong>
+</p>
+
+<button class="btn btn-primary"
+[routerLink]="['/users' , userObj.userId , 'editUser']"
+>
+    Edit User Details
+</button>
+
+
+
+<hr>
+
+
+<a href="javaScript:;"
+[routerLink]="['/users' , 5 ]">
+    Load the JULY 
+</a>
+<hr>
+<div >
+    <button class="btn btn-info "
+    [routerLink]="['/users' , 3]">
+        Load the MAY
+    </button>
+</div>
+
+
+
